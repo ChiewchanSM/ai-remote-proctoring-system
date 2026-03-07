@@ -17,3 +17,10 @@ This system utilizes computer vision and machine learning for real-time behavior
 
 ## Developed By
 **Chiewchan Sumalares** - System Architect & Developer
+
+## Examinee View
+<img width="1196" height="703" alt="Examinees view" src="https://github.com/user-attachments/assets/986910cd-45ad-4e6b-b564-af012c3ad45b" />
+
+## Examiner View
+<img width="1919" height="944" alt="Home" src="https://github.com/user-attachments/assets/bbaae060-c337-4c32-a22b-fe3e4bded136" />
+<img width="1411" height="699" alt="Evidence Log" src="https://github.com/user-attachments/assets/64c1685b-ac4e-48d8-8ec7-3a12439e7e66" />

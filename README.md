@@ -16,4 +16,4 @@ This system utilizes computer vision and machine learning for real-time behavior
 3. **Teacher Dashboard:** A responsive web interface for examiners to monitor multiple students simultaneously and review structured evidence logs.
 
 ## Developed By
-**Chiewchan Sumalares** - System Architect & Lead Developer
+**Chiewchan Sumalares** - System Architect & Developer

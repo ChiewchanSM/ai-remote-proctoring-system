@@ -1,0 +1,9 @@
+opencv-python
+numpy
+torch
+torchvision
+ultralytics
+mediapipe
+face_recognition
+Flask
+requests

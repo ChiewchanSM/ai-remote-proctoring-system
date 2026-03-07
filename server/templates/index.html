@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f4f7f6; font-family: 'Nunito', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        .dashboard-header { position: relative; background: linear-gradient(135deg, #6e8efb, #a777e3); color: white; padding: 30px 0; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; margin-bottom: 40px; }
+        .k-dai-logo { position: absolute; top: 20px; left: 30px; max-width: 90px; background-color: white; border-radius: 50%; padding: 5px; }
+        .student-card { border: none; border-radius: 15px; transition: transform 0.2s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+        .student-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .developer-footer { margin-top: auto; padding: 20px 0; text-align: center; color: #a4b0be; font-size: 0.9rem; }
+        .developer-footer span { font-weight: 800; color: #6e8efb; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-header text-center shadow-sm">
+        <img src="/static/logo.png" alt="K-DAI Logo" class="k-dai-logo">
+        <h1 class="mt-2">Classroom Overview</h1>
+        <p class="mb-0 opacity-75">Select a student to view their proctoring evidence</p>
+    </div>
+
+    <div class="container mb-5 flex-grow-1">
+        <div class="row g-4">
+            {% for student in students %}
+            <div class="col-md-4">
+                <a href="/student/{{ student[0] }}" class="card student-card shadow-sm p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">{{ student[0] }}</h4>
+                    <div class="d-flex justify-content-between text-muted mb-2">
+                        <span>Total Alerts:</span>
+                        <span class="badge bg-danger rounded-pill fs-6">{{ student[1] }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted fs-7">
+                        <span>Latest:</span>
+                        <span>{{ student[2] }}</span>
+                    </div>
+                </a>
+            </div>
+            {% else %}
+            <div class="col-12 text-center text-muted py-5">
+                <h2>📭 No data yet.</h2>
+                <p>Waiting for examinees to connect...</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer class="developer-footer">
+        Powered by K-DAI | System Architect & Developer: <span>Chiewchan Sumalares</span>
+    </footer>
+
+</body>
+</html>

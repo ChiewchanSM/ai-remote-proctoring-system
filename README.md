@@ -1,6 +1,6 @@
 # K-DAI Smart Remote Proctoring System
 
-An end-to-end automated proctoring application designed to secure remote examinations. 
+An end-to-end automated proctoring web application designed to secure remote examinations. 
 
 ## Overview
 This system utilizes computer vision and machine learning for real-time behavioral tracking and digital screen monitoring. Evidence of academic dishonesty is automatically transmitted via REST API to a centralized SQLite database and displayed on a live Flask web dashboard for instructor review.

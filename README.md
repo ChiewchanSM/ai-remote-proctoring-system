@@ -1,4 +1,4 @@
-# K-DAI Smart Remote Proctoring System
+# Smart Remote Proctoring System
 
 An end-to-end automated proctoring web application designed to secure remote examinations. 
 
